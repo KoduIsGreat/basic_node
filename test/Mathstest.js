@@ -36,7 +36,7 @@ describe('math functions test', function(){
     });
 });
 
-//integration 
+//integration
 describe('math integrations tests', function(){
     it("should sum two numbers and get proper response", function(){
         return chai.request(server)
@@ -45,7 +45,7 @@ describe('math integrations tests', function(){
                 // console.log(res)
                 expect(res).to.have.status(200);
                 // expect(res.text).to.be.eql("3")
-                expect(res.text).to.not.be.eql("3") // expected to break
+                expect(res.text).to.be.eql("3") // expected to break
             }
         )
     });
